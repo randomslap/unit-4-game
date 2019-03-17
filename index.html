@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Righteous"
+			rel="stylesheet"
+		/>
+		<img src="assets/images/background.jpg" id="background" />
+		<script
+			src="http://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"
+		></script>
+		<script src="assets/javascript/game.js"></script>
+		<title>Star Wars RPG Game</title>
+	</head>
+	<header>
+		<div class="container">
+			<div class="row justify-content-center">
+				<h1 class="col-md-6" id="starWarsHeader">Star Wars RPG Game</h1>
+			</div>
+		</div>
+	</header>
+
+	<body>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-6" id="character">Select a character!</div>
+			</div>
+			<div class="row justify-content-center">
+				<button class="col-md-2 btnCharacter" id="luke">
+					<h5>Luke Skywalker</h5>
+					<img
+						src="assets/images/luke.jpg"
+						alt="Luke Skywalker"
+						height="100"
+						width="100"
+					/>
+					<div>Health:</div>
+					<div id="lukeHealth"></div>
+				</button>
+				<button class="col-md-2 btnCharacter" id="obiwan">
+					<h5>Obi-wan Kenobi</h5>
+					<img
+						src="assets/images/obiwan.jpg"
+						alt="Obi-wan Kenobi"
+						height="100"
+						width="100"
+					/>
+					<div>Health:</div>
+					<div id="obiwanHealth"></div>
+				</button>
+				<button class="col-md-2 btnCharacter" id="sideous">
+					<h5>Darth Sideous</h5>
+					<img
+						src="assets/images/sideous.jpg"
+						alt="Darth Sideous"
+						height="100"
+						width="100"
+					/>
+					<div>Health:</div>
+					<div id="sideousHealth"></div>
+				</button>
+				<button class="col-md-2 btnCharacter" id="maul">
+					<h5>Darth Maul</h5>
+					<img
+						src="assets/images/maul.jpg"
+						alt="Darth Maul"
+						height="100"
+						width="100"
+					/>
+					<div>Health:</div>
+					<div id="maulHealth"></div>
+				</button>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-9" id="attack">
+					<button class="btn">Attack</button>
+				</div>
+			</div>
+			<div class="row justify-content-center" id="enemiesHeader">
+				<div>Enemies</div>
+			</div>
+			<div class="row justify-content-center" id="enemies"></div>
+			<div class="row justify-content-center">
+				<div class="col-md-9" id="status"></div>
+			</div>
+		</div>
+		<script
+			src="http://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"
+		></script>
+		<script src="assets/javascript/game.js"></script>
+	</body>
+</html>

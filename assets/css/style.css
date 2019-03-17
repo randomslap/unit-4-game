@@ -1,0 +1,103 @@
+body {
+  font-family: "Righteous", cursive;
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  border: 2px;
+  border-color: #ffd700;
+  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.btn:hover {
+  border: 2px;
+  border-color: #ffd700;
+  border-style: solid;
+  background-color: red;
+  color: black;
+}
+
+.btnCharacter {
+  border: 2px;
+  border-style: solid;
+  border-color: #ffd700;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 10px;
+  color: white;
+}
+
+.btnCharacter:hover {
+  background-color: red;
+  color: black;
+}
+
+.btnCharacterEnemy {
+  border: 2px;
+  border-style: solid;
+  border-color: #ffd700;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 10px;
+  color: white;
+}
+
+.btnCharacterEnemy:hover {
+  background-color: red;
+  color: black;
+}
+
+.selectedEnemy {
+  border: 2px;
+  border-style: solid;
+  border-color: #ffd700;
+  border-radius: 5px;
+  background-color: red;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 10px;
+  color: white;
+}
+
+#background {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#starWarsHeader {
+  font-size: 20px !important;
+}
+
+#images {
+  height: 100px;
+  width: 120px;
+  align-content: center;
+}
+
+#selected {
+  border: 2px;
+  border-style: solid;
+  border-color: #ffd700;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 10px;
+  color: white;
+}
+
+#status {
+  font-size: 20px;
+  color: red;
+}
