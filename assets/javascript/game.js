@@ -80,6 +80,7 @@ $(document).ready(function() {
 			$("#character").text("Selected Character");
 			$("#status").text("Select an enemy");
 			console.log("character selected: " + characterSelected);
+			$("#lukeHealth").html(character.health);
 		}
 	});
 	$(obiwanID).on("click", function() {
@@ -110,6 +111,7 @@ $(document).ready(function() {
 			$("#character").text("Selected Character");
 			$("#status").text("Select an enemy");
 			console.log("character selected: " + characterSelected);
+			$("#obiwanHealth").html(character.health);
 		}
 	});
 	$(sideousID).on("click", function() {
@@ -140,6 +142,7 @@ $(document).ready(function() {
 			$("#character").text("Selected Character");
 			$("#status").text("Select an enemy");
 			console.log("character selected: " + characterSelected);
+			$("#sideousHealth").html(character.health);
 		}
 	});
 	$(maulID).on("click", function() {
@@ -170,6 +173,7 @@ $(document).ready(function() {
 			$("#character").text("Selected Character");
 			$("#status").text("Select an enemy");
 			console.log("character selected: " + characterSelected);
+			$("#maulHealth").html(character.health);
 		}
 	});
 	$("body").on("click", "#enemyLuke", function() {
@@ -179,6 +183,7 @@ $(document).ready(function() {
 			$("#enemyLuke").addClass("selectedEnemy");
 			$("#status").hide();
 			console.log("enemy selected: " + enemySelected);
+			$("#lukeHealth").html(enemy.health);
 		}
 	});
 	$("body").on("click", "#enemyObiwan", function () {
@@ -188,6 +193,7 @@ $(document).ready(function() {
 			$("#enemyObiwan").addClass("selectedEnemy");
 			$("#status").hide();
 			console.log("enemy selected: " + enemySelected);
+			$("#obiwanHealth").html(enemy.health);
 		}
 	});
 	$("body").on("click", "#enemySideous", function () {
@@ -197,6 +203,7 @@ $(document).ready(function() {
 			$("#enemySideous").addClass("selectedEnemy");
 			$("#status").hide();
 			console.log("enemy selected: " + enemySelected);
+			$("#sideousHealth").html(enemy.health);
 		}
 	});
 	$("body").on("click", "#enemyMaul", function () {
@@ -206,14 +213,17 @@ $(document).ready(function() {
 			$("#enemyMaul").addClass("selectedEnemy");
 			$("#status").hide();
 			console.log("enemy selected: " + enemySelected);
-			console.log(enemy.name)
+			console.log(enemy.name);
+			$("#maulHealth").html(enemy.health);
 		}
 	});
 	$("#attack").on("click", function () {
 		if (characterSelected == true && enemySelected == true) {
 			$("#status").show();
 			$("#status").text("You attacked " + enemy.name + "!");
-			
+			enemy.health = enemy.health - character.attack;
+			$("#selectedEnemy")
+				.html(enemy.health);
 		}
 	})
 });
