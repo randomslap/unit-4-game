@@ -4,25 +4,25 @@ var luke = {
 	name: "Luke Skywalker",
 	health: 150,
 	attack: 5,
-	baseAttack: 5
+	baseAttack: 5,
 };
 var obiwan = {
 	name: "Obi-wan Kenobi",
 	health: 100,
 	attack: 10,
-	baseAttack: 10
+	baseAttack: 10,
 };
 var sideous = {
 	name: "Darth Sideous",
 	health: 110,
 	attack: 10,
-	baseAttack: 10
+	baseAttack: 10,
 };
 var maul = {
 	name: "Darth Maul",
 	health: 90,
 	attack: 20,
-	baseAttack: 20
+	baseAttack: 20,
 };
 var character = {};
 var enemy = {};
