@@ -58,17 +58,17 @@ $(document).ready(function() {
 			"<div class='col-md-2' id='selected'>" + $(this).html() + "</div>"
 		);
 		$(obiwanID).replaceWith(
-			"<button class='col-md-2 btnCharacterEnemy' id='enemy1'>" +
+			"<button class='col-md-2 btnCharacterEnemy' id='enemyObiwan'>" +
 				$(obiwanID).html() +
 				"</button>"
 		);
 		$(sideousID).replaceWith(
-			"<button class='col-md-2 btnCharacterEnemy' id='enemy2'>" +
+			"<button class='col-md-2 btnCharacterEnemy' id='enemySideous'>" +
 				$(sideousID).html() +
 				"</button>"
 		);
 		$(maulID).replaceWith(
-			"<button class='col-md-2 btnCharacterEnemy' id='enemy3'>" +
+			"<button class='col-md-2 btnCharacterEnemy' id='enemyMaul'>" +
 				$(maulID).html() +
 				"</button>"
 		);
@@ -186,7 +186,7 @@ $(document).ready(function() {
 			$("#lukeHealth").html(enemy.health);
 		}
 	});
-	$("body").on("click", "#enemyObiwan", function () {
+	$("body").on("click", "#enemyObiwan", function() {
 		if (enemySelected == false) {
 			initializeEnemy(obiwan);
 			enemySelected = true;
@@ -196,7 +196,7 @@ $(document).ready(function() {
 			$("#obiwanHealth").html(enemy.health);
 		}
 	});
-	$("body").on("click", "#enemySideous", function () {
+	$("body").on("click", "#enemySideous", function() {
 		if (enemySelected == false) {
 			initializeEnemy(sideous);
 			enemySelected = true;
@@ -206,7 +206,7 @@ $(document).ready(function() {
 			$("#sideousHealth").html(enemy.health);
 		}
 	});
-	$("body").on("click", "#enemyMaul", function () {
+	$("body").on("click", "#enemyMaul", function() {
 		if (enemySelected == false) {
 			initializeEnemy(maul);
 			enemySelected = true;
@@ -217,13 +217,12 @@ $(document).ready(function() {
 			$("#maulHealth").html(enemy.health);
 		}
 	});
-	$("#attack").on("click", function () {
+	$("#attack").on("click", function() {
 		if (characterSelected == true && enemySelected == true) {
 			$("#status").show();
 			$("#status").text("You attacked " + enemy.name + "!");
 			enemy.health = enemy.health - character.attack;
-			$("#selectedEnemy")
-				.html(enemy.health);
+			$("#selectedEnemy").html(enemy.health);
 		}
-	})
+	});
 });
